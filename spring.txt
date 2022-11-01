@@ -1,0 +1,547 @@
+Topics need to cover :
+1.what is Spring Framework
+2.Spring FrameWork Tutorail
+3.Spring Aop
+4.Dependency Injection
+5.Spring Mvc Architexture
+-------------------------------
+what are java Frameworks:
+Frame work are large bodies (usually many class) of predefined code to which we can
+add to our own code to solve a problem in specific domain
+a.large bodies of predefined code
+b.added to our own code 
+c.solves a problem in a specific domain
+Advantages of java Framework:
+a.Efficency
+b.Security
+c.Expense
+d.Support
+Disadvantages of java Frameworks:
+a.Restriction
+b.code is public
+c.custom built features
+Why Java Frame works:
+a.too complex 
+b.'look-up' problem
+c.Heavy weighted component
+------
+Spring Framework:
+1.Spring is complete and a modular framework for developing enterprise applications in java
+2.Spring Framework can be used for all layer implementations for a real time application
+3.Spring can be used for the developement of particular layer of real time application
+Features:
+1.Open Source
+2.Comprehesive Tool
+3.light Weight
+4.solve problems
+5.FrameWork of Frameworks 
+6.Avails array of resorces
+---------------------------
+Why Spring is Popular
+1.Simplicity
+2.Testablity
+3.Losse Coupling
+4.Spring Framework is simple because as it is non-invasive it uses pojo and poji
+5.If a java class is not coupled with any technology (OR) any framework then that java class is
+called pojo class
+ --------
+Spring Framework Ecosystem:
+1.Web layer:/Spirng io platform
+a.Spring Hateoas
+b.Spring Mobile
+c.Spring Web Flow
+d.Spring Session
+e.Spring Web Services
+d.Sping Social
+2.Common Layer:/Spring Boot
+a.Spring Test
+b.Spring web
+c.Spring Aop
+d.Spring Container
+e.Spring Date Access
+d.Spring Messaging
+3.Service Layer:Spring XD
+a.Spring Cloud
+b.Spring Integration
+4.Data layer:
+a.Spring LDAP
+b.Spring AMQP
+c.Spring DATA
+d.Spring BATCH
+Spring Architexture:
+__-__--------------------------------------------------
+Spring Modules
+a.The Spring Framework contains a lot of Features which are well-Organized in about twentyy Modules
+b.These Modules can be grouped together based on the primary features into features
+a.Core Container
+b.Data Access/integration
+c.web
+d.Aop(Aspect Oriented programming)
+e.instrumentation
+f.Test
+--
+Modules - Core Container :
+a.Core :Provide the fundamental parts of the framework
+b.Beans : Provides Beanfactory
+c.SpEL : Provides a powerfull expression language
+d.Context:Supports internationalization (18N) EJB, JMS,Basic Remoting
+---
+Modules-Data Access
+a.JDBC :Provids a JDBC abstraction layer
+b.ORM : Provides Integration Layer
+c.Transaction : Supports Programmtic and declartive transaction mangement 
+d.JMS : Contains Features for producing and consuming messages
+e.OXM : Provides an abstarction
+---
+Modules-web
+a.web : Provides basic web-Oriented integration features
+b.Web Mvc : Contains Spring Model view controller implementation
+c.web Portlet: Provides the mvc implementation used in a porlet enviornment
+d.web Socket : Provides support for webSocket based two-way commiunication
+--
+Modules-Misscellaneous
+a.Aop : Provides an  aspect-oriented programming implementation
+b.Instrumenting : Provides class instrumentation support and class loader implementations
+c.Test:Support the testing of Spring components with Junit or TestNG frameworks
+d.Messaging : Provides support for STOPMP as the webSocket Sub-protocal to use in applications
+e.Aspects : Provides integration with Aspectj
+-----
+Ioc Container Features:
+The Spring ioc container by using java pojo classes and configuration metadata produces a fully
+configured and executable system or application
+1.Creating The Object
+2.Wiring them together
+3.Configuring Them
+4.Manging their Complete Life cycle
+it contains :
+Configured by loading the xml files or by detecting specific java annotations on configuration classs.
+Two types of Ioc Containers :
+a.Bean Factory
+b.ApplicationContext
+---
+Dependency Injection :
+1.Makes the Application easy to manage and test
+2.Makes our Programming code Loosely coupled
+Types of Dependency Injection:
+Spring framework avails two to inject dependency :
+a.By Constructer using below way :
+The <constructor-arg> subelement of <bean> is used for construction injection
+b.By setter Method : 
+The <Property> subelement of<bean> is used for setter injection
+----
+Aspect Oriented Programming :
+1.Provides modularity with aspect rather than class
+2.AOP breaks the program logic into distinct parts called concerns
+3.Increase modularity by cross-cutting concerns
+4.A cross-cutting concern is a concern which can affect the entire application
+----
+Model view controller:
+User input is interpreted by the controller and are transformed into a model which
+is represented to the user by the view
+------
+Start coding in 5 simple steps:
+1.Bean class
+2.xml file
+3.Demo class
+4.load jar files
+5.Run
+In Ioc conversion having a 2 api :
+1.Bean Factory
+2.Application context
+Bean factory : Bean factory constructs the objects when you request for it by calling the 
+gat bean method.
+Application context:
+application context will construct the objects even though you dont request for them that one difference 
+b/w bean factory and application context
+----
+Ioc container Features:
+The Spring ioc container by using java pojo class and configuration metadata produces a fully configured and
+executable system or application
+1.Creating the objects
+2.Wiring them together
+3.Managing their complete life cycle
+4.Configuring
+----
+Bean Object:
+1.Beans are the objects that from the backbone of our application and are managed by the spring ioc container
+2.Spring ioc container instantiates,assembles,and manages the bean object
+3.The configuration metadata that are suppiled to the container are used create beans object.
+----
+Depandency Injection:
+1.It is a design pattern which removes the dependency from the programming code, that makes the application easy
+to manage and test.
+2.Dependency injection makes our programming code loosely coupled, which means change in implementation doesn't 
+affects the user
+Types of Dependency Injection:
+Spring Framework avails two ways to inject dependency:
+1.By Constructor : The <Constructor-arg> subelement of <bean> is used for constructor injection
+2.By Setter method : The <Property> subelement of <bean> is used for setter injection.
+----
+What is Spring Aop?
+a.Spring AOP enables Aspect Oriented Programming in Spring Application
+b.Aspects enable modularization of concerns
+c.Adds cross cutting concern before, after around the actual logic
+d.Easy to maintain code in the present and future.
+Why AOP?
+It provides the pluggable way to dynamically add the addtional concern before, after 
+or around the actual logic.
+----
+AOP Core Concepts:
+1.join point- A point in a program such as method execution, exception handling 
+
+2.Weaving-Weaving is the process of linking aspects with other outsider application types or objects to create an advised object. 
+
+3.Advice-Represents an action taken by an aspect at a particular join point
+
+4.Pointcut- it is an expression language of AOP that matches join points
+
+5.Target Object-It is an object where the advice is applied 
+These target objects are proxied:Target objects are proxied which means during the runtime the target …
+
+6.Aspect:It is a class that contains advices, joinpoints etc.
+----
+Spring AOP Example::
+1.Maven Dependencies:
+Need to import Spring AOP dependencies into your project
+2.Aspect&Point Cut Expression:
+Write aspect class annotated with @Aspect annotation and write point-cut expressions
+3.Methods(join points):
+Write methods on which you want to execute advices and those match with point-cut expressions.
+4.Run the application:
+Run the application watch the console
+----
+Types of AOP devices:
+1.Before Advice:
+It executes before the join point
+2.After Advice:
+Adiviced to execute after a jointpoint
+3.After returning Advice:
+Adviced to execute after the joint point completes
+4.Around Advice:
+Advice that surrounds a join point like method invocation.
+----
+Spring AOP ASPECTJ Annotation:
+1.Project Dependecies
+2.Spring Beans
+3.Enable Aspectj
+4.Apply Advices
+----
+Dependency Injection:
+what is Dependency injection 
+a.Dependency injection is the ablity of an object to supply dependencies of an other objects
+b.The process of creating an object for some other class and let the class directly using the 
+dependency is called dependency injection
+----
+Inversion of Control:
+A class should not configure its dependencies statically but should be configured by some other class
+from outside
+A class should concentrate on fulfilling its responsbuiltes like the flow of application and not on creating objects.
+Types of Dependency Injection:
+1.Construtor
+Dependencies are provide through a class constructor 
+2.Setter:
+Injector method injects the dependency to the setter method exposed by the client
+3.Interface:
+Injector uses interface to provide the dependency to provide the dependency to 
+the client class.
+Benfits of DI:
+1.Enables an easy way to interconnect the components
+2.Application can be easily extended 
+3.unit Testing is made much easier 
+4.Reduction of Boiler plate code.
+-----
+Spring Mvc Tutorial:
+1.what is Spring Mvc
+a.it is a java framework which is used to build web applications.it follows the model-view controller
+design pattern.
+b. Not just that it also implements all the basic features of a core sprign framework like inversion
+of control, Dependency injection
+Spring Model view:
+(Dispathcer servelet)
+1.Request
+2.Handller Mapping
+3.controller
+4.Controller to Dispathcer servelet
+5.View Resolver
+6.View.
+-----
+Spring MVC Example:
+1.Create a new Maven Project & Add dependencies
+2.Create a controller class and configure web xml file
+3.Define the bean in xml file
+4.Create a jsp page and execute the program.
+---
+Advantages of Spring MVC
+1.MVC Supported
+2.Role Seperation
+3.High Productive
+4.Light Weight
+5.secure
+------
+Spring interview Questions:
+1.What is Spring Framework?
+a.It is lightweight loosely coupled and integrated framework created to address the 
+complexcity of enterprise application devolepment
+B.Because of its layered architexture we can be selective about which of its components
+to use while of its components to use while also providing a cohesive framework for j2ee
+application devolepment
+2.list of advantages of Spring Framework?
+a.Layered architexutre
+b.Enables pojo Programming
+c.Dependency injection and inversion of control
+d.Open source and no vendor lock-in
+3.What are the fetures of Spring Framework?
+1.Light Weight
+2.Inversion of Controller(ioc)
+3.Aspect Oriented(Aop)
+4.Container
+5.Mvc Framework
+6.Transaction Management
+7.JDBC Exception Handlling
+4.How many modules are there in Spring and what they are?
+1.Data Access/Integration
+2.Web
+3.Core Container
+4.Test
+5.what is Spring Configuration file?
+a.Spring configuration file is an xml file which 
+b.Contains the classes information
+c.Describes how classes are configured and introduced to each other
+6.What are the differnent components of Spring application?
+a.An interface that defines the Function
+b.The Implementation that contains properties its setter and gettee methods
+functions 
+c.Spring AOP
+d.The Spring Configuration xml file
+e.Client programm that uses the function
+7.What are the various ways of using Spirng?
+a.Fully-fledgeed Spring web app
+b.Spring middle-tier provides help of a third-party web framework
+c.Remote usage scenario
+d.EJB ---wrapping existing POJOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
